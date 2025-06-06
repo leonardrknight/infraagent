@@ -1,0 +1,11 @@
+{
+  "projectName": "my-awesome-app",
+  "description": "A modern web application with authentication and payments",
+  "stack": ["nextjs", "postgres"],
+  "features": ["auth", "payments", "api"],
+  "environments": ["development", "production"],
+  "branding": {
+    "colors": ["#0070f3", "#1a1a1a"],
+    "logo": "logo.svg"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "projectName": "Next.js Supabase App",
+  "description": "A modern web application using Next.js and Supabase",
+  "services": {
+    "github": {
+      "repo": "username/nextjs-supabase",
+      "private": true,
+      "description": "Next.js + Supabase Application"
+    },
+    "vercel": {
+      "project": "nextjs-supabase",
+      "framework": "nextjs"
+    },
+    "supabase": {
+      "project": "nextjs-supabase",
+      "region": "us-east-1",
+      "database": {
+        "name": "main",
+        "password": "your-secure-password"
+      }
+    }
+  },
+  "environment": {
+    "production": {
+      "NODE_ENV": "production",
+      "NEXT_PUBLIC_SUPABASE_URL": "https://nextjs-supabase.supabase.co",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY": "your-anon-key"
+    },
+    "development": {
+      "NODE_ENV": "development",
+      "NEXT_PUBLIC_SUPABASE_URL": "http://localhost:54321",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY": "your-anon-key"
+    }
+  }
+}

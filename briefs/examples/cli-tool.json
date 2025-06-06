@@ -1,0 +1,23 @@
+{
+  "projectName": "InfraAgent CLI",
+  "description": "A CLI tool for infrastructure management and automation",
+  "services": {
+    "github": {
+      "repo": "username/infraagent-cli",
+      "private": false,
+      "description": "Infrastructure Management CLI Tool"
+    },
+    "vercel": {
+      "project": "infraagent-cli",
+      "framework": "node"
+    }
+  },
+  "environment": {
+    "production": {
+      "NODE_ENV": "production"
+    },
+    "development": {
+      "NODE_ENV": "development"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "projectName": "InfraAgent",
+  "description": "AI-powered DevOps architect that transforms project briefs into fully-configured infrastructure",
+  "projectType": "cli-tool",
+  "stack": {
+    "frontend": "commander",
+    "backend": "node"
+  },
+  "services": {
+    "github": {
+      "private": false,
+      "topics": ["cli", "devops", "infrastructure", "automation"],
+      "has_issues": true,
+      "has_projects": true,
+      "has_wiki": false
+    }
+  },
+  "features": ["cli", "documentation", "templates", "auth-management"],
+  "branding": {
+    "slug": "infraagent",
+    "displayName": "InfraAgent CLI"
+  },
+  "naming": {
+    "strategy": "consistent",
+    "prefix": "infraagent"
+  },
+  "team": {
+    "owner": "leonardknight",
+    "collaborators": []
+  }
+}

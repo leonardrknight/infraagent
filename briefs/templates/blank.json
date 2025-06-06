@@ -1,0 +1,15 @@
+{
+  "projectName": "",
+  "description": "",
+  "services": {
+    "github": {
+      "repo": "",
+      "private": true,
+      "description": ""
+    }
+  },
+  "environment": {
+    "production": {},
+    "development": {}
+  }
+}

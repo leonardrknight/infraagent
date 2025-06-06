@@ -1,0 +1,48 @@
+{
+  "projectName": "Full Stack SaaS",
+  "description": "A modern full-stack SaaS application with Next.js, Supabase, and Stripe",
+  "services": {
+    "github": {
+      "repo": "username/full-stack-saas",
+      "private": true,
+      "description": "Full Stack SaaS Application"
+    },
+    "vercel": {
+      "project": "full-stack-saas",
+      "framework": "nextjs"
+    },
+    "supabase": {
+      "project": "full-stack-saas",
+      "region": "us-east-1",
+      "database": {
+        "name": "main",
+        "password": "your-secure-password"
+      }
+    },
+    "cloudflare": {
+      "domain": "myapp.com",
+      "dns": {
+        "type": "CNAME",
+        "name": "www",
+        "value": "cname.vercel-dns.com"
+      }
+    },
+    "stripe": {
+      "mode": "test",
+      "webhook": {
+        "endpoint": "/api/webhooks/stripe",
+        "events": ["payment_intent.succeeded", "payment_intent.failed"]
+      }
+    }
+  },
+  "environment": {
+    "production": {
+      "NODE_ENV": "production",
+      "API_URL": "https://api.myapp.com"
+    },
+    "development": {
+      "NODE_ENV": "development",
+      "API_URL": "http://localhost:3000"
+    }
+  }
+}

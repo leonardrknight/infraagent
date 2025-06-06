@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "GITHUB_REPO": "{{GITHUB_REPO}}",
+    "VERCEL_PROJECT": "{{VERCEL_PROJECT}}",
+    "SUPABASE_URL": "{{SUPABASE_URL}}",
+    "SUPABASE_ANON_KEY": "{{SUPABASE_ANON_KEY}}",
+    "DOMAIN_NAME": "{{DOMAIN_NAME}}"
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ],
+  "redirects": [],
+  "rewrites": []
+}
