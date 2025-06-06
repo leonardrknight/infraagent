@@ -1,0 +1,26 @@
+{
+  "projectName": "InfraAgent",
+  "description": "AI-powered DevOps architect that transforms project briefs into fully-configured infrastructure",
+  "stack": {
+    "frontend": "commander",
+    "backend": "node"
+  },
+  "services": {
+    "github": {
+      "repo": "infraagent",
+      "private": false,
+      "description": "AI-powered DevOps architect that transforms project briefs into fully-configured infrastructure"
+    }
+  },
+  "environments": [
+    "development",
+    "staging",
+    "production"
+  ],
+  "features": [
+    "cli",
+    "documentation",
+    "templates",
+    "auth-management"
+  ]
+}
