@@ -139,4 +139,4 @@ See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
 
 ## 📄 License
 
-MIT © [Your Name](https://github.com/yourusername)
+MIT © [Leonard Knight](https://github.com/leonardrknight)
