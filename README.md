@@ -1,5 +1,3 @@
-# InfraAgent
-
 <div align="center">
   <h1>InfraAgent</h1>
   <p><strong>AI-powered DevOps architect that transforms project briefs into fully-configured infrastructure</strong></p>
