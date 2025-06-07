@@ -1,24 +1,23 @@
 # InfraAgent
 
 <div align="center">
+  <h1>InfraAgent</h1>
+  <p><strong>AI-powered DevOps architect that transforms project briefs into fully-configured infrastructure</strong></p>
+  
+  <p>
+    <a href="https://www.npmjs.com/package/infraagent"><img src="https://img.shields.io/npm/v/infraagent.svg" alt="npm version"></a>
+    <a href="https://github.com/leonardknight/infraagent/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+    <a href="https://github.com/leonardknight/infraagent/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+    <a href="#"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier"></a>
+    <a href="https://github.com/leonardknight/infraagent/stargazers"><img src="https://img.shields.io/github/stars/leonardknight/infraagent.svg" alt="GitHub stars"></a>
+  </p>
+</div>
 
-```
-╦╔╗╔╔═╗╦═╗╔═╗╔═╗╔═╗╔═╗╔╗╔╔╦╗
-║║║║╠╣ ╠╦╝╠═╣╠═╣║ ╦║╣ ║║║ ║
-╩╝╚╝╚  ╩╚═╩ ╩╩ ╩╚═╝╚═╝╝╚╝ ╩
-```
+---
 
-[![npm version](https://img.shields.io/npm/v/infraagent.svg)](https://www.npmjs.com/package/infraagent)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Code Style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/infraagent.svg?style=social)](https://github.com/yourusername/infraagent)
-
-**Infrastructure scaffolding for modern SaaS/web startup stacks**
+## 🚀 Transform your infrastructure setup from hours to minutes
 
 [Quick Start](#quick-start) • [Features](#features) • [Why InfraAgent?](#why-infraagent) • [Documentation](#documentation)
-
-</div>
 
 ## 📋 Table of Contents
 
