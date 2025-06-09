@@ -6,10 +6,10 @@
   
   <p>
     <a href="https://www.npmjs.com/package/infraagent"><img src="https://img.shields.io/npm/v/infraagent.svg" alt="npm version"></a>
-    <a href="https://github.com/leonardknight/infraagent/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-    <a href="https://github.com/leonardknight/infraagent/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+    <a href="https://github.com/leonardrknight/infraagent/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+    <a href="https://github.com/leonardrknight/infraagent/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
     <a href="#"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier"></a>
-    <a href="https://github.com/leonardknight/infraagent/stargazers"><img src="https://img.shields.io/github/stars/leonardknight/infraagent.svg" alt="GitHub stars"></a>
+    <a href="https://github.com/leonardrknight/infraagent/stargazers"><img src="https://img.shields.io/github/stars/leonardrknight/infraagent.svg" alt="GitHub stars"></a>
   </p>
 </div>
 
@@ -26,7 +26,6 @@
 - [Why InfraAgent?](#why-infraagent)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Examples](#examples)
 - [Architecture](#architecture)
 - [Contributing](#contributing)
 - [Changelog](#changelog)
@@ -38,13 +37,16 @@
 # Install InfraAgent
 npm install -g infraagent
 
-# Create a new project
-infraagent scaffold --brief project.json
+# Set up authentication for your services
+infraagent auth setup
+
+# Create a new project with interactive wizard
+infraagent init
 ```
 
 ## ✨ Features
 
-- 🎯 **One Brief, Complete Setup**: Define your infrastructure in a single JSON file
+- 🎯 **Interactive Setup**: Guided wizard for project configuration
 - 🔄 **Multi-Service Integration**: GitHub, Vercel, Supabase, Cloudflare, Stripe
 - 🔒 **Secure Credentials**: AES-256 encryption for all service tokens
 - 🎨 **Beautiful CLI**: Progress tracking, spinners, and clear output
@@ -83,49 +85,50 @@ yarn global add infraagent
 
 ## 🎮 Usage
 
-1. Create a brief file:
-
-```json
-{
-  "projectName": "my-app",
-  "description": "A modern web application",
-  "projectType": "web-app",
-  "services": {
-    "github": {
-      "repo": "username/my-app",
-      "private": true
-    },
-    "vercel": {
-      "project": "my-app"
-    },
-    "supabase": {
-      "project": "my-app-db"
-    }
-  }
-}
-```
-
-2. Run the scaffold command:
+### 1. Authentication Setup
 
 ```bash
-infraagent scaffold --brief project.json
+# Set up authentication for all services
+infraagent auth setup
+
+# Or configure individual services
+infraagent auth add github
+infraagent auth add vercel
+infraagent auth add supabase
 ```
 
-## 📚 Examples
+### 2. Project Creation
 
-Check out our [examples directory](briefs/examples/) for sample briefs:
+```bash
+# Start the interactive wizard
+infraagent init
 
-- [Full Stack App](briefs/examples/full-stack.json)
-- [CLI Tool](briefs/examples/cli-tool.json)
-- [Next.js + Supabase](briefs/examples/nextjs-supabase.json)
-- [API Service](briefs/examples/api-only.json)
+# The wizard will guide you through:
+# - Project name and description
+# - Project type selection
+# - Service configuration
+# - Environment setup
+```
+
+### 3. Brief Management
+
+```bash
+# List all saved project briefs
+infraagent briefs
+
+# Execute a saved brief
+infraagent exec <brief-name>
+
+# Open a brief in your editor
+infraagent edit <brief-name>
+```
 
 ## 🏗️ Architecture
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   Brief     │     │  InfraAgent │     │  Services   │
-│  (JSON)     │────▶│   (CLI)     │────▶│  (GitHub,   │
+│  InfraAgent │     │  Brief      │     │  Services   │
+│   (CLI)     │────▶│  Manager    │────▶│  (GitHub,   │
 └─────────────┘     └─────────────┘     │   Vercel,   │
                                         │  Supabase)  │
                                         └─────────────┘
@@ -141,4 +144,11 @@ See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
 
 ## 📄 License
 
-MIT © [Your Name](https://github.com/yourusername)
+MIT © [Knight Ventures, Inc.](https://leonardknight.com)
+
+## 📞 Contact
+
+- **Website**: [leonardknight.com](https://leonardknight.com)
+- **Email**: [leo@leonardknight.com](mailto:leo@leonardknight.com)
+- **Support**: [support@leonardknight.com](mailto:support@leonardknight.com)
+- **GitHub**: [github.com/leonardrknight/infraagent](https://github.com/leonardrknight/infraagent)
